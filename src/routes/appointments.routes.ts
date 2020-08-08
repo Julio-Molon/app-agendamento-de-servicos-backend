@@ -1,6 +1,6 @@
 /* eslint-disable no-shadow */
 import { Router } from 'express';
-import { GetCustomRepository, getCustomRepository } from 'typeorm';
+import { getCustomRepository } from 'typeorm';
 import { parseISO } from 'date-fns';
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
 import CreateAppointmentService from '../services/CreateAppointmentService';
