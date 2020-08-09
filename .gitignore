@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Ignore all files on tmp but not the tmp folder
+tmp/*
+!tmp/.gitkeep
