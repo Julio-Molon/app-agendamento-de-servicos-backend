@@ -4,7 +4,7 @@ import CreateUserService from './CreateUserService';
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 
 describe('CreateUser', () => {
-  it('should to be able to create a user', async () => {
+  it('should be able to create a user', async () => {
     const fakeUsersRepository = new FakeUsersRepository();
     const fakeHashProvider = new FakeHashProvider();
 
@@ -37,7 +37,7 @@ describe('CreateUser', () => {
       password: '123456',
     });
 
-    expect(
+    await expect(
       createUser.execute({
         name: 'John Doe',
         email: 'johndoe@example.com',
