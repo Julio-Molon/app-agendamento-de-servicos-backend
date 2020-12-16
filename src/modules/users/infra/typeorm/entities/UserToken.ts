@@ -16,8 +16,8 @@ class UserToken {
   @Generated('uuid')
   token: string;
 
-  @Column('timestampo with time zone')
-  user_id: Date;
+  @Column()
+  user_id: string;
 
   @CreateDateColumn()
   createdAt: Date;
