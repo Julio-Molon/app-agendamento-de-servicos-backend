@@ -12,6 +12,8 @@ class FakeUsersTokensRepository implements IUsersTokensRepository {
       id: uuid(),
       token: uuid(),
       user_id,
+      createdAt: new Date(),
+      updatedAt: new Date(),
     });
 
     this.usersTokens.push(userToken);
