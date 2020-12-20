@@ -2,7 +2,6 @@ import AppError from '@shared/errors/AppError';
 import { injectable, inject } from 'tsyringe';
 // import User from '../infra/typeorm/entities/User';
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
-import { template } from 'handlebars';
 import path from 'path';
 
 import IUsersRepository from '../repositories/IUsersRepository';
@@ -23,7 +22,7 @@ class SendForgotPasswordEmailService {
 
     @inject('UserTokensRepository')
     private userTokensRepository: IUserTokensRepository,
-  ) { }
+  ) {}
 
   public async execute({ email }: IRequest): Promise<void> {
     const user = await this.usersRepository.findByEmail(email);
