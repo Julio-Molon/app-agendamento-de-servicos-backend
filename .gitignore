@@ -106,3 +106,7 @@ dist
 #Ignore all files on tmp but not the tmp folder
 tmp/*
 !tmp/.gitkeep
+
+#ignore sensitive files
+.env
+ormconfig.json
