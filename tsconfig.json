@@ -17,12 +17,17 @@
       ],
       "@shared/*": [
         "shared/*"
-      ]
+      ],
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    //"skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "exclude": [
+    "jest.config.js",
+    "/home/julio/app/coverage",
+    "/home/julio/app/prettier.config.js",
+  ]
 }
